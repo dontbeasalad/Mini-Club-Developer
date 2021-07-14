@@ -1,0 +1,56 @@
+/* Selector Modifiewr
+btn--main
+btn--secondary */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+  font-family: "Karla", sans-serif;
+}
+header {
+  background-color: black;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo a {
+  color: white;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+header nav ul li {
+  display: inline;
+  padding-left: 60px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+footer {
+  padding: 2rem;
+}
+.card__btn {
+  padding: 2px 2rem 2px 2rem;
+}
+.card__btn.btn--main {
+}
