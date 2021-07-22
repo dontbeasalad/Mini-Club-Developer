@@ -32,7 +32,7 @@ header {
   background-color: var(--nav-bg);
   position: fixed;
   bottom: 0;
-  width: 100%;
+  z-index: 1;
 }
 .navbar {
   display: flex;
@@ -44,6 +44,9 @@ header {
   list-style: none;
   padding: 0 2rem 0 2rem;
 }
+.nav-name {
+  display: none;
+}
 
 main {
   display: flex;
@@ -53,7 +56,6 @@ main {
 
 .content {
   max-width: 375px;
-  justify-content: center;
   margin: 20px;
   margin-bottom: 90px;
 }
@@ -109,10 +111,72 @@ main {
 }
 
 i {
-  color: black;
+  color: var(--text-primary);
 }
 i:hover,
 i:active,
 i:focus {
   color: var(--nav-icon);
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+  }
+
+  main {
+    margin-top: 80px;
+    justify-content: left;
+    margin: 80px;
+  }
+
+  .content {
+    max-width: none;
+    width: 100%;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+  .notes {
+    align-items: flex-start;
+    justify-content: left;
+  }
+  .icon-notes img {
+    width: 150px;
+    margin-right: 40px;
+  }
+
+  .desc-notes {
+    margin-top: 30px;
+  }
+  .desc-notes h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .desc-notes h4 {
+    font-size: 20px;
+  }
+  .nav-name {
+    display: flex;
+    color: var(--text-primary);
+  }
+  .nav-name:hover {
+    color: var(--nav-icon);
+  }
+  header .fas {
+    display: none;
+  }
+
+  header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  header a:hover {
+    color: var(--nav-icon);
+    font-weight: bold;
+  }
+  ::-webkit-scrollbar- {
+    background-color: var(--text-primary);
+  }
 }
