@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assest/img/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +22,7 @@
     ></script>
     <title>Nyatet App</title>
   </head>
-  <body>
+  <body class="light-theme">
     <!-- Header Starts Here -->
     <header>
       <nav>
@@ -64,16 +69,18 @@
           <div class="title-1">
             <h1>Marked</h1>
           </div>
-          <div class="setting-icon">
-            <a href="">
-              <i class="fas fa-cog"></i>
-            </a>
+          <div class="darkmode">
+            <label class="switch">
+              <i class="fas fa-adjust"></i>
+              <div>
+                <input type="checkbox" />
+              </div>
+            </label>
           </div>
         </section>
-
         <section class="notes">
-          <a href="">
-            <article class="content-notes">
+          <article class="content-notes">
+            <a href="">
               <div class="icon-notes">
                 <img src="./assest/img/01.png" alt="" />
               </div>
@@ -84,10 +91,10 @@
                   for
                 </h4>
               </div>
-            </article>
-          </a>
-          <a href="">
-            <article class="content-notes">
+            </a>
+          </article>
+          <article class="content-notes">
+            <a href="">
               <div class="icon-notes">
                 <img src="./assest/img/02.png" alt="" />
               </div>
@@ -98,37 +105,37 @@
                   before
                 </h4>
               </div>
-            </article>
-          </a>
-          <a href="">
-            <article class="content-notes">
+            </a>
+          </article>
+          <article class="content-notes">
+            <a href="">
               <div class="icon-notes">
                 <img src="./assest/img/03.png" alt="" />
               </div>
               <div class="desc-notes">
-                <h2>Shopping Items</h2>
+                <h2>Shopping Activity</h2>
                 <h4>
                   Biscuits, New Shirt, Flowers, Gift, Muouse and Keyboard, Book
                 </h4>
               </div>
-            </article>
-          </a>
-          <a href="">
-            <article class="content-notes">
+            </a>
+          </article>
+          <article class="content-notes">
+            <a href="">
               <div class="icon-notes">
                 <img src="./assest/img/04.png" alt="" />
               </div>
               <div class="desc-notes">
-                <h2>Sister Birhtday Party</h2>
+                <h2>Sister Birthday Party</h2>
                 <h4>
                   So our big family will celebrate my sister's birthday as
                   cheerfully as
                 </h4>
               </div>
-            </article>
-          </a>
-          <a href="">
-            <article class="content-notes">
+            </a>
+          </article>
+          <article class="content-notes">
+            <a href="">
               <div class="icon-notes">
                 <img src="./assest/img/01.png" alt="" />
               </div>
@@ -139,10 +146,21 @@
                   cheerfully as
                 </h4>
               </div>
-            </article>
-          </a>
+            </a>
+          </article>
         </section>
       </div>
     </main>
+    <footer>
+      <p class="attribution">
+        Designed by
+        <a
+          href="https://ui8.net/rizeu/products/nyatet-easy-notes-app-ui-kit"
+          target="_blank"
+          >Rizeu</a
+        >. Coded by <a href="https://github.com/dontbeasalad">Muhamad Hanif</a>.
+      </p>
+    </footer>
+    <script src="darkmode.js"></script>
   </body>
 </html>
